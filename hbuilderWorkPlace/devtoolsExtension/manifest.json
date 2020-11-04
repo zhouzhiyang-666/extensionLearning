@@ -1,0 +1,22 @@
+{
+	"manifest_version":2,
+	"name":"创建devtools扩展",
+	"description":"即将创建一个扩展工具",
+	"version":"1.1.0",
+	"icons":{
+		"16":"img/icon.png",
+		"32":"img/icon.png",
+		"48":"img/icon.png"
+	},
+	"background":{
+		"scripts":["js/background.js"]
+	},
+	//chrome40以前的插件配置写法
+	"options_page":"option.html",
+	//chrome40以后的插件配置写法，兼容哥哥版本，最好两个都写
+	"options_ui":{
+		"page":"option.html",
+		"chrome_style":true   //推荐使用默认样式
+	},
+	"devtools_page":"devtools.html"
+}

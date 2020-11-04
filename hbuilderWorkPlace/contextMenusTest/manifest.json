@@ -1,0 +1,25 @@
+{
+	"manifest_version":2,
+	"name":"contextMenusTest",
+	"description":"this is a easy contextMenus test!",
+	"version":"1.2.0",
+	"omnibox":{"keyword":"go"},
+	"icons":{
+		"16":"img/icon.png",
+		"32":"img/icon.png",
+		"48":"img/icon.png"
+	},
+	"browser_action":{
+		"default_icon":"img/icon.png",
+		"default_title":"这是一个简单的popup!",
+		"default_popup":"popup.html"
+	},
+	"background":{
+		//background和event-pages的区别：event-pages多了一个参数persistent
+		"persistent":false,
+		//2种指定方式，如果指定js，那么会自动生成一个背景页
+		// "scripts":["js/bg.js"]
+		"page":"background.html"
+	},
+	"permissions":["contextMenus","notifications","tabs"]
+}

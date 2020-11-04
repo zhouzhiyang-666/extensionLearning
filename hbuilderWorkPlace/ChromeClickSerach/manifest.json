@@ -1,0 +1,20 @@
+{
+	"manifest_version":2,
+	"name":"baiduSearch",
+	"description":"This is a easy serach by baidu!",
+	"version":"1.0.2",
+	"icons":{
+		"16":"img/icon.png",
+		"32":"img/icon.png",
+		"48":"img/icon.png"
+	},
+	"background":{
+		"scripts":["js/translate.js"]
+	},
+	"permissions":["contextMenus"],
+	"chrome_url_overrides":
+		{
+			// 覆盖浏览器默认的新标签页
+			"newtab": "newtab.html"
+		}
+}
